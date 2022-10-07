@@ -1,0 +1,124 @@
+/* 
+	GENERAL
+	HEADER
+
+	FOOTER
+ */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	list-style: none;
+	border: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+body {
+	font-size: 14px;
+}
+
+
+
+
+
+
+/* -------------------------------- HEADER --------------------------------*/
+.page-header 
+{
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 0 5px #222;
+	padding: 0 45px;
+}
+.navbar {
+	text-transform: uppercase;
+}
+.nav-link {
+	color:  #000 !important;
+}
+.page-header-logo-image 
+{
+	height: 70px;
+}
+.contacts {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.contacts-phone {
+	font-size: 16px;
+	color: #222;
+}
+.contacts-consultation {
+	font-size: 14px;
+	color: #222;
+	text-transform: uppercase;
+
+	padding: 10px 20px;
+
+	border-radius: 50px;
+	border: 1px solid #222;
+}
+.contacts-item {
+	margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------- FOOTER --------------------------------*/
+.page-footer {
+	padding-top: 165px;
+	padding-bottom: 135px;
+}
+.page-footer-navigation {
+	display: flex;
+	flex-direction: column;
+}
+.links {
+}
+.footer-navigation-title {
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-bottom: 14px;
+}
+
+.links-item {
+	margin-bottom: 10px;
+}
+.footer-logo {
+	max-width: 150px;
+}
+.socials-horizontal {
+	padding-top: 30px;
+}
+.social-sites-link {
+	padding-right: 10px; 
+}
+.footer-copyright {
+	font-size: 12px;
+	margin-top: 30px;
+}
