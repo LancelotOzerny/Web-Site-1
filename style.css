@@ -173,6 +173,53 @@ h1
 
 
 
+.modal-window {
+	background-color: #fff;
+	width: 600px;
+	height: 400px;
+	
+	opacity: 1 !important;
+
+	position: fixed;
+	left: calc(50vw - 300px);
+	top: calc(50vh - 200px);
+
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	border-radius: 10px;
+	box-shadow: 0 0 15px #222;
+
+	z-index: 100;
+}
+.modal-window-text {
+	font-size: 38px;
+}
+.close-btn {
+	width: 30px;
+	height: 30px;
+
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	box-shadow: 0 0 5px #222;
+}
+.close-btn-image {
+	width: 80%;
+	height: 80%;
+	margin: 10%;
+}
+
+
+
+
+
+
+
+
+
 
 
 

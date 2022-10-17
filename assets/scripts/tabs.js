@@ -41,3 +41,9 @@ function SetActiveBlock(name)
 		}
 	}
 }
+
+
+document.getElementsByClassName('close-btn')[0].onclick = function() 
+{
+	document.getElementById('modal-window').classList.remove('service--active');
+}
