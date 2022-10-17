@@ -82,7 +82,7 @@ h1
 
 /* -------------------------------- NAVIGATION --------------------------------*/
 
-.Navigation 
+.Tabs 
 {
 	display: flex;
 	justify-content: space-between;
@@ -93,7 +93,7 @@ h1
 	margin-bottom: 30px;
 	margin-top: 100px;
 }
-.Navigation-item 
+.Tabs-item 
 {
 	width: 100%;
 	border-right: 1px solid #000;
@@ -101,7 +101,7 @@ h1
 	padding: 14px 22px;
 	text-align: center;
 }
-.Navigation-item--active 
+.Tabs-item--active 
 {
 	color: #fff;
 	background-color: #545454;
@@ -179,8 +179,19 @@ h1
 
 
 /* -------------------------------- SERVICES --------------------------------*/
-.service {
+.service { 
+	max-height: 0px;
+	padding: 0;
+	overflow: hidden;
+
+	opacity: 0;
+
+	transition: .2s;
+}
+.service--active {
+	max-height: 1000px;
 	padding: 60px 0px 75px;
+	opacity: 1;
 }
 .service-info {
 	position: relative;

@@ -100,11 +100,11 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<div class="Navigation">
-					<input type="text" class="Navigation-item Navigation-item--active" value="Арх. Проектирование">
-					<input type="text" class="Navigation-item" value="Дизайн интерьера">
-					<input type="text" class="Navigation-item" value="Ландшафтный дизайн">
-					<input type="text" class="Navigation-item" value="3D визуализация">
+				<div class="Tabs">
+					<input type="button" bind="block1" class="Tabs-item Tabs-item--active" value="Арх. Проектирование">
+					<input type="button" bind="block2" class="Tabs-item" value="Дизайн интерьера">
+					<input type="button" bind="block3" class="Tabs-item" value="Ландшафтный дизайн">
+					<input type="button" bind="block4" class="Tabs-item" value="3D визуализация">
 				</div>
 			</div>
 		</div>
@@ -118,7 +118,7 @@
 	<!---------------------------------- SERVICES ---------------------------------->
 	<div class="container">
 		<div class="services">
-			<div class="service">
+			<div class="service tabBlock service--active" tabBlock="block1">
 				<div class="row service-info">
 					<div class="col-md-8">
 						<h3 class="service-title">Проект дома под ключ</h3>
@@ -156,10 +156,46 @@
 		</div>
 
 		<div class="services">
-			<div class="service">
+			<div class="service tabBlock" tabBlock="block2">
 				<div class="row service-info">
 					<div class="col-md-8">
 						<h3 class="service-title">Разработка архитектурной концепции</h3>
+					</div>				
+					<div class="col-md-4">
+						<h4 class="service-cost">₽/м² 150</h4>
+					</div>
+				</div>
+				<p class="service-description">Разработка концептуального/эскизного/конкурсного проекта комплекса зданий, и (или) сооружений и (или) территорий.</p>
+
+				<div class="service-button">
+					<a class="btn service-button-link">Подробнее</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="services">
+			<div class="service tabBlock" tabBlock="block3">
+				<div class="row service-info">
+					<div class="col-md-8">
+						<h3 class="service-title">Тестирование профессиональных функций</h3>
+					</div>				
+					<div class="col-md-4">
+						<h4 class="service-cost">₽/м² 150</h4>
+					</div>
+				</div>
+				<p class="service-description">Разработка концептуального/эскизного/конкурсного проекта комплекса зданий, и (или) сооружений и (или) территорий.</p>
+
+				<div class="service-button">
+					<a class="btn service-button-link">Подробнее</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="services">
+			<div class="service tabBlock" tabBlock="block4">
+				<div class="row service-info">
+					<div class="col-md-8">
+						<h3 class="service-title">Разрабтка проецированной проекции</h3>
 					</div>				
 					<div class="col-md-4">
 						<h4 class="service-cost">₽/м² 150</h4>
@@ -258,7 +294,7 @@
 
 
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-
+	<script src="assets/scripts/tabs.js"></script>
 	<!-- BOOTSTRAP SCRIPTS -->
 	<script src="assets/scripts/bootstrap-jQuery.js"></script>
 	<script src="assets/scripts/bootstrap-min.js"></script>
